@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <meta charset="utf-8">
+        <title>Broom</title>
+        <style type="text/css">
+             @font-face{
+                font-family:'coochie';
+                src:url('fonts/Coochie Nando NF W01 Regular/Coochie Nando NF W01 Regular.svg'),
+                url('fonts/Coochie Nando NF W01 Regular/Coochie Nando NF W01 Regular.eot'),
+                url('fonts/Coochie Nando NF W01 Regular/Coochie Nando NF W01 Regular.ttf'),
+                url('fonts/Coochie Nando NF W01 Regular/Coochie Nando NF W01 Regular.woff');
+            }
+            @font-face{
+                font-family:'clarendon';
+                src:url('fonts/Clarendon/ClarendonLTStd.svg'),
+                url('fonts/Clarendon/ClarendonLTStd.eot'),
+                url('fonts/Clarendon/ClarendonLTStd.ttf'),
+                url('fonts/Clarendon/ClarendonLTStd.woff');
+            }
+            
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            
+        
+            body>p{
+                position: fixed;
+                font-family: "coochie";
+                font-size: 20vw;
+                color: darkred;
+             
+            }
+            p[title="b1"]{
+                top: 0;
+                left: 3%;
+            }
+            p[title="b2"]{
+                top: 0;
+                right: 3%;   
+                transform: rotate(180deg);
+                transform: scale(1,-1);
+            }
+            p[title="m1"]{
+                bottom: 0;
+                left: 3%;   
+                transform: rotate(180deg);
+            }
+            p[title="m2"]{
+                bottom: 0;
+                right: 3%; 
+            }
+            p[title="o centro"]{
+                bottom: 40%;
+                right: 44%;
+            }
+            p[title="r1"]{
+                top: 20%;
+                left: 22%;
+            }
+             p[title="r2"]{
+                top: 20%;
+                right: 22%;
+                transform: rotate(180deg);    
+            }
+             p[title="o1"]{
+                bottom: 20%;
+                right: 22%;
+            }
+             p[title="o2"]{
+                bottom: 20%;
+                left: 22%;
+                transform: rotate(180deg);
+            }
+            div p{
+                font-family: "clarendon";
+            }
+            div p:first-child{
+                position: absolute;
+                font-size: 30px;
+                left: 0;
+                top: -10%;
+                color: darkred;
+                font-size: 20px;
+            }
+             div p:last-child{
+                position: absolute;
+                right: -10%;
+                font-size: 120px;
+                color: darkred;
+                top: -40px; 
+                left: 30%;
+            }
+            div[title="6arriba"]{
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                top: 2%;
+                left: 40%;
+                
+            }
+            div[title="6derecha"]{
+                position: absolute;
+                width: 90px;
+                height: 100px;
+                bottom: 40%;
+                right: 3%;
+                transform: rotate(180deg);
+                transform: scale(1,-1);
+            }
+            div[title="1izquierda"]{
+                position: absolute;
+                width: 90px;
+                height: 100px;
+                bottom: 40%;
+                left: 0;
+                transform: rotate(180deg);
+                
+            }
+             div[title="1bajo"]{
+                position: absolute;
+                width: 90px;
+                height: 100px;
+                bottom: 0;
+                top: 83%;
+                right: 44%;
+                        
+            }
+        </style>
+    </head>
+    <body style="background-color: burlywood">
+        <p title="b1">B</p>
+        <p title="b2">B</p>
+        <p title="o centro">O</p>
+        <p title="m1">M</p>
+        <p title="m2">M</p>
+        <p title="r1">R</p>
+        <p title="r2">R</p>
+        <p title="o1">O</p>
+        <p title="o2">O</p>
+        <div title="6arriba">
+            <p>vol.</p>
+            <p>6</p>
+        </div>
+        <div title="6derecha">
+            <p>vol.</p>
+            <p>6</p>
+        </div>
+        <div title="1izquierda">
+            <p>NO.</p>
+            <p>1</p>
+        </div>
+        <div title="1bajo">
+            <p >NO.</p>
+            <p>1</p>
+        </div>  
+    </body>
+</html>
